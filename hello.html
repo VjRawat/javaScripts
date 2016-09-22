@@ -1,0 +1,22 @@
+<html>
+<head>HTML</head>
+<body>
+  <Form name="f">
+  <Input type="password" label="password" name="t1" size="20">
+  <Input type="password" label="retypepassword" name="t2" size="20">
+  <Input type="Button" value="submit" onClick=calc()>
+  </Form>
+<script type="text/javaScript">
+function cal()
+{
+    if(document.f.t1.value==document.f.t2.value)
+  {
+    alert("password matched");
+  }else{
+    alert("password did not match");
+    document.f.t1.focus();
+  }
+}
+</script>
+</body>
+</html>
